@@ -1,0 +1,141 @@
+1.What are the two values of the Boolean data type? How do you write them?
+>>
+They are :
+True and False.
+while writting, we check the condition whether it is true or false.
+
+
+2. What are the three different types of Boolean operators?
+>>
+They are :
+AND -- Used when multiple conditions are true.
+OR -- Used when only 1 condition is true among multiple or 2 conditions.
+NOT -- Used when we need to exlude a condition.
+
+
+3. Make a list of each Boolean operator&#39;s truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+>>
+AND :
+x=1 and y=1 >>> 1
+x=1 and y=0 >>> 0
+x=0 and y=1 >>> 0
+x=0 and y=0 >>> 0
+
+OR :
+x=1 or y=1 >>> 1
+x=1 or y=0 >>> 1
+x=0 or y=1 >>> 1
+x=0 or y=0 >>> 0
+
+NOT :
+not(x=1) >>> 0
+not(x=0) >>> 1
+
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+>>
+(5 > 4) and (3 == 5) >>> False
+not (5 > 4) >>> False
+(5 > 4) or (3 == 5) >>> True
+not ((5 > 4) or (3 == 5)) >>> False
+(True and True) and (True == False) >>> False
+(not False) or (not True) >>> True
+
+
+5. What are the six comparison operators?
+>>>
+They are :
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+== (equal to)
+!= (Not equal to)
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a
+condition and when you would use one.
+>>
+Equal to operator is used to compare 2 different value while assignment operator is used to assign a value to any variable.
+Like :
+x = 5,
+y = 5 are the examples of assigning values to variables while
+x == y is an example of comparing 2 different variables.
+
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+
+>>>
+This code has 3 different blocks :
+a) if spam == 10 :
+b) if spam > 5 :
+c) else :
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+>>
+spam = int(input("Enter the value of Spam, Please : "))
+if (spam == 1) :
+	print("Hello")
+elif (spam == 2) :
+	print("Howdy")
+else :
+   	print("Greetings!")
+
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+>>
+Use "CTRL + C"
+
+
+10. How can you tell the difference between break and continue?
+>>
+Break : It is used to get immediate exit from loop.
+Continue : It is used to end the current iteration of the loop and go to the the next iteration of the loop.
+
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+>>
+These 3 will give the same output here.
+range function actually works like "range(start, end-1, steps)"
+in range(10) : start = 0 and Steps = 1 are by default,
+in range(0,10) : steps = 1 is by default.
+while in range(0,10,1) : everything is provided.
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while loop.
+>>
+Using for loop :
+for i in range(1,11):
+	print(i)
+
+Using while loop :
+i=1
+while(i<=10):
+	print(i)
+	i = i+1
+
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after
+importing spam?
+>>
+import spam
+spam.bacon()
